@@ -1,5 +1,7 @@
 # MCP Server Setup Instructions for GitHub Copilot
 
+> **⚠️ DEPRECATED**: This guide has been superseded by the comprehensive [MCP Servers Documentation](../mcp-servers/README.md). Please use the new documentation for the latest server configurations and setup instructions.
+
 This guide helps you set up MCP (Model Context Protocol) servers with GitHub Copilot. You can install individual servers or explore additional servers from the community.
 
 ## Prerequisites
