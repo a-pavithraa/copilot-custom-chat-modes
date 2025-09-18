@@ -17,6 +17,7 @@ mkdir .vscode && type nul > .vscode\mcp.json  # Windows
 | [Git](./core/git.md) | Core | None | Git version control operations |
 | [Playwright](./web/playwright.md) | Core | None | Browser automation via accessibility tree |
 | [Sequential Thinking](./ai-ml/sequential-thinking.md) | Core | None | Structured problem-solving framework |
+| [Context7](./ai-ml/context7.md) | Core | None | Up-to-date code documentation and examples |
 | [Figma](./development/figma.md) | Dev | API Key | Design-to-code conversion |
 | [Confluence](./development/confluence.md) | Dev | Token | Documentation search & management |
 | [GitLab Analyzer](./internal/gitlab-repo-analyzer.md) | Internal | Token | Repository architecture analysis |
@@ -43,6 +44,10 @@ mkdir .vscode && type nul > .vscode\mcp.json  # Windows
     "sequential-thinking": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
     }
   }
 }
@@ -88,11 +93,12 @@ Add to full stack profile:
 
 ## Common Workflows
 
-- **Design → Code**: Figma → Sequential Thinking → Filesystem → Git → Playwright
-- **Documentation**: Confluence → Sequential Thinking → Filesystem → Git
+- **Design → Code**: Figma → Sequential Thinking → Context7 → Filesystem → Git → Playwright
+- **Documentation**: Confluence → Context7 → Sequential Thinking → Filesystem → Git
 - **Code Analysis**: GitLab Fetcher → Filesystem → GitLab Analyzer → Sequential Thinking → Git
-- **Local Development**: Filesystem → Git → Sequential Thinking → Playwright
+- **Local Development**: Context7 → Filesystem → Git → Sequential Thinking → Playwright
 - **Version Control**: Git → Filesystem → Sequential Thinking
+- **Library Integration**: Context7 → Sequential Thinking → Filesystem → Git
 
 ## Troubleshooting
 

@@ -86,6 +86,23 @@ Step 2 — example `mcp.json` input and server entry:
 }
 ```
 
+### Context7 MCP
+
+No setup or API key required.
+
+Example `mcp.json` entry:
+
+```json
+{
+    "servers": {
+        "context7": {
+            "command": "npx",
+            "args": ["-y", "@upstash/context7-mcp"]
+        }
+    }
+}
+```
+
 ### Figma MCP
 
 Step 1 — generate a Figma personal access token (Settings → Personal access tokens).
